@@ -44,7 +44,7 @@ class ControllerPost extends Controller
     {
         $validator = Validator::make($request->all(), [
             'title' => 'required',
-            'title' => 'required',
+            'content' => 'required',
         ]);
 
         if ($validator->fails()) {
